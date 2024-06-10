@@ -56,35 +56,22 @@
       .moving-button {
         position: relative;
       }
-
     </style>
   </head>
   <body>
     <div class="container">
       <div class="message">Maaf Celin Tomat🍅</div>
-      <p>
-        Dengan Adanya Kodingan sederhana ini, saya meminta maaf yang sebesar
-        besarnya.
-      </p>
-      <p>
-        Dan saya harap kamu memaafkan saya atas perbuatan durjana itu, maafkan
-        binatang jalang ini
-      </p>
-      <img src="fizi.jpg" style="width: 300px" />
+      <p>Dengan Adanya Kodingan sederhana ini, saya meminta maaf yang sebesar besarnya.</p>
+      <p>Dan saya harap kamu memaafkan saya atas perbuatan durjana itu, maafkan binatang jalang ini</p>
+      <img src="Asset/fizi.jpg" style="width: 300px" />
       <div class="player">
-        <audio
-          id="audio"
-          src="Line Without A Hook (Alphasvara Lo-Fi Remix).mp3"
-          type="audio/mpeg"
-        ></audio>
+        <audio id="audio" src="Asset/Line Without A Hook (Alphasvara Lo-Fi Remix).mp3" type="audio/mpeg"></audio>
         <button onclick="playSong()">Play</button>
         <button onclick="pauseSong()">Pause</button>
       </div>
       <div class="extra-buttons" id="extra-buttons">
         <button>Dimaafin</button>
-        <button class="moving-button" onmouseover="moveButton(this)">
-          enggaakkk
-        </button>
+        <button class="moving-button" onmouseover="moveButton(this)">enggaakkk</button>
       </div>
     </div>
 
@@ -111,10 +98,7 @@
         do {
           newLeft = Math.random() * (containerRect.width - buttonRect.width);
           newTop = Math.random() * (containerRect.height - buttonRect.height);
-        } while (
-          Math.abs(newLeft - button.offsetLeft) < buttonRect.width &&
-          Math.abs(newTop - button.offsetTop) < buttonRect.height
-        );
+        } while (Math.abs(newLeft - button.offsetLeft) < buttonRect.width && Math.abs(newTop - button.offsetTop) < buttonRect.height);
 
         button.style.position = "absolute";
         button.style.left = `${newLeft}px`;
